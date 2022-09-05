@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import logo from './logo.svg';
+import Demo from './components/demo';
+import Props from './components/props' ;
+// import './App.css';
+import Propsfunction from './components/propsWithfunction';
+import  PropsWithState from  './components/props_width_state'; 
+import  Changingobject from  './components/Changingobject'; 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <>
+    <Demo name="Mukesh Kumar"/>
+    <hr/>
+    <Props name="This is props value"/>
+    <hr/>
+    <PropsWithState/>
+    <hr/>
+    <Changingobject/>
+    <hr/>
+    <Propsfunction name="Props With function component "  />
+    </>
   );
 }
 
