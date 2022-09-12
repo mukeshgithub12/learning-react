@@ -1,0 +1,22 @@
+.tablescroll {
+    overflow-y: auto;
+    height: 20vh;
+    width: 100%;
+}
+.tablescroll table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablescroll thead,
+.tablescroll tfoot {
+    background: #eee;
+}
+.tablescroll thead {
+    position: sticky;
+    top: -1px;
+}
+.tablescroll tfoot {
+    position: sticky;
+    bottom: 0;
+}
