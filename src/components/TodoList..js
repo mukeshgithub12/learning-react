@@ -29,20 +29,26 @@ const TodoList = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
-        <button onClick={addItem} className="btn btn-info rounded-0  btn-sm">Add</button>
+        <button onClick={addItem} className="btn btn-info rounded-0 ">Add</button>
       </div>
 
       <div>
-        <ul className="list-group list-group-flush">
+        <ul>
           {todoList.map(({ id, todo, isCompleted }) => (
             <li
               onClick={() => handleCompleted(id)}
-              className={isCompleted ? "todo strike" : "todo list-group-item" }
+              className={isCompleted ? "todo strike" : "todo"}
             >
               {todo}
             </li>
           ))}
         </ul>
+        <input
+      onBlur={(e) => {
+        console.log('Triggered because this input lost focus');
+      }}
+      placeholder="onBlur is triggered when you click this input and then you click outside of it."
+    />
       </div>
     </div>
   );
