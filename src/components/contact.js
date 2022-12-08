@@ -1,4 +1,5 @@
 import React from "react";
+import Useeffectone from "../props/useeffectone";
 import Navbar from "./navbar";
 
 const contact = () => {
@@ -6,6 +7,7 @@ const contact = () => {
     <>
       <Navbar />
       <h1>contact page</h1>
+      <Useeffectone />
     </>
   );
 };
